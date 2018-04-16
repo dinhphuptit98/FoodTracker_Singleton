@@ -12,6 +12,11 @@
 		A328CDC0207B06D10082CCF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A328CDBE207B06D10082CCF9 /* Main.storyboard */; };
 		A328CDC2207B06D10082CCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A328CDC1207B06D10082CCF9 /* Assets.xcassets */; };
 		A328CDC5207B06D10082CCF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A328CDC3207B06D10082CCF9 /* LaunchScreen.storyboard */; };
+		A328CDD0207B07B50082CCF9 /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328CDCF207B07B50082CCF9 /* RatingController.swift */; };
+		A328CDD2207B07C20082CCF9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328CDD1207B07C20082CCF9 /* Meal.swift */; };
+		A328CDD4207B07EA0082CCF9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328CDD3207B07EA0082CCF9 /* MealTableViewCell.swift */; };
+		A328CDD7207B084C0082CCF9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328CDD6207B084C0082CCF9 /* DataService.swift */; };
+		A328CDD9207B16640082CCF9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328CDD8207B16640082CCF9 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A328CDC1207B06D10082CCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A328CDC4207B06D10082CCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A328CDC6207B06D10082CCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A328CDCF207B07B50082CCF9 /* RatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
+		A328CDD1207B07C20082CCF9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		A328CDD3207B07EA0082CCF9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		A328CDD6207B084C0082CCF9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A328CDD8207B16640082CCF9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		A328CDB9207B06D00082CCF9 /* FoodTracker2 */ = {
 			isa = PBXGroup;
 			children = (
+				A3E11BBE207B541900BB85C7 /* View */,
+				A328CDD5207B082E0082CCF9 /* DataService */,
+				A328CDCE207B07500082CCF9 /* Custom Cell */,
+				A328CDCD207B07470082CCF9 /* Model */,
+				A328CDCC207B07430082CCF9 /* Rating */,
 				A328CDBA207B06D10082CCF9 /* AppDelegate.swift */,
-				A328CDBC207B06D10082CCF9 /* ViewController.swift */,
 				A328CDBE207B06D10082CCF9 /* Main.storyboard */,
 				A328CDC1207B06D10082CCF9 /* Assets.xcassets */,
 				A328CDC3207B06D10082CCF9 /* LaunchScreen.storyboard */,
 				A328CDC6207B06D10082CCF9 /* Info.plist */,
 			);
 			path = FoodTracker2;
+			sourceTree = "<group>";
+		};
+		A328CDCC207B07430082CCF9 /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				A328CDCF207B07B50082CCF9 /* RatingController.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		A328CDCD207B07470082CCF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A328CDD1207B07C20082CCF9 /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A328CDCE207B07500082CCF9 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A328CDD3207B07EA0082CCF9 /* MealTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		A328CDD5207B082E0082CCF9 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				A328CDD6207B084C0082CCF9 /* DataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		A3E11BBE207B541900BB85C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A328CDD8207B16640082CCF9 /* TableViewController.swift */,
+				A328CDBC207B06D10082CCF9 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A328CDD2207B07C20082CCF9 /* Meal.swift in Sources */,
+				A328CDD9207B16640082CCF9 /* TableViewController.swift in Sources */,
 				A328CDBD207B06D10082CCF9 /* ViewController.swift in Sources */,
 				A328CDBB207B06D10082CCF9 /* AppDelegate.swift in Sources */,
+				A328CDD7207B084C0082CCF9 /* DataService.swift in Sources */,
+				A328CDD0207B07B50082CCF9 /* RatingController.swift in Sources */,
+				A328CDD4207B07EA0082CCF9 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
